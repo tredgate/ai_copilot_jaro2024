@@ -1,0 +1,25 @@
+{
+  "name": "playwrightempty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tredgate/playwrightEmpty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tredgate/playwrightEmpty/issues"
+  },
+  "homepage": "https://github.com/tredgate/playwrightEmpty#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  }
+}

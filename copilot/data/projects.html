@@ -1,0 +1,2058 @@
+<div class="row">
+  <div class="col-md-12">
+    <script>
+      $(function () {
+        $(".users-alers-close").click(function () {
+          id = $(this).attr("data-id");
+          $.ajax({
+            method: "POST",
+            url: "https://tredgate.com/pmtool/index.php?module=dashboard/&action=set_users_alers_viewed&token=PO0Fg5FITo",
+            data: { id: id },
+          });
+        });
+      });
+    </script>
+
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="page-breadcrumb breadcrumb noprint">
+          <li>
+            <a
+              href="https://tredgate.com/pmtool/index.php?module=items/items&amp;path=21"
+            >
+              Projects</a
+            >
+          </li>
+        </ul>
+
+        <h3 class="page-title">Projects</h3>
+        <div class="help-pages-announcement"></div>
+      </div>
+    </div>
+
+    <input
+      name="entity_items_listing_path"
+      id="entity_items_listing_path"
+      value="21"
+      type="hidden"
+    />
+
+    <div class="portlet portlet-filters-preview noprint" test_id="Filters">
+      <div class="portlet-title">
+        <div class="caption">
+          <div class="btn-group">
+            <button
+              class="btn dropdown-toggle btn-users-filters"
+              type="button"
+              data-toggle="dropdown"
+              data-hover="dropdown"
+              test-id="filters_dropdown_menu"
+            >
+              <i class="fa fa-angle-down"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a
+                  href="https://tredgate.com/pmtool/index.php?module=reports/users_filters&amp;action=use&amp;id=default&amp;redirect_to=listing&amp;reports_id=2076&amp;path=21&amp;token=PO0Fg5FITo"
+                  ><i class="fa fa-angle-right"></i>Default Filters</a
+                >
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a
+                  onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=reports/users_filters_form&amp;&amp;redirect_to=listing&amp;reports_id=2076&amp;path=21')"
+                  class="link-to-modalbox"
+                  ><i class="fa fa-floppy-o"></i> Save Filters</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-group">
+            <button
+              title="Add Filter"
+              class="btn dropdown-toggle btn-users-filters"
+              type="button"
+              data-toggle="dropdown"
+              data-hover="dropdown"
+              test_id="Add_filter"
+            >
+              <i class="fa fa-plus"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a
+                  onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=reports/filters_form&amp;reports_id=2076&amp;redirect_to=listing&amp;path=21')"
+                  class="link-to-modalbox"
+                  >For Entity: <b>Projects</b></a
+                >
+              </li>
+            </ul>
+          </div>
+          Applied Filters
+        </div>
+        <div class="actions">
+          <div class="btn-group">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              data-toggle="dropdown"
+              data-hover="dropdown"
+              test_id="view_configuration"
+            >
+              <i class="fa fa-gear"></i>
+            </a>
+            <ul class="dropdown-menu pull-right">
+              <li>
+                <a
+                  onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=reports/sorting&amp;reports_id=2076&amp;redirect_to=listing&amp;path=21')"
+                  class="link-to-modalbox"
+                  ><i class="fa fa-sort-amount-asc"></i> Sorting
+                  Configuration</a
+                >
+                <a
+                  onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=reports/configure&amp;reports_id=2076&amp;redirect_to=listing&amp;path=21')"
+                  class="link-to-modalbox"
+                  ><i class="fa fa-wrench"></i> Listing Configuration</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tools">
+          <a
+            href="javascript:;"
+            class="collapse"
+            test_id="expand_collapse_filters"
+          ></a>
+        </div>
+      </div>
+      <div class="portlet-body" data_portlet_id="filters_preview_2076">
+        <ul class="list-inline">
+          <li>
+            <a
+              href="https://tredgate.com/pmtool/index.php?module=reports/filters&amp;action=delete&amp;id=all&amp;redirect_to=listing&amp;path=21&amp;reports_id=2076&amp;token=PO0Fg5FITo"
+              title="Remove All Filters"
+              class="btn btn-default"
+              test_id="remove_all_filters"
+              ><i class="fa fa-trash-o" test_id="remove_filter"></i>
+            </a>
+            <a
+              onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=reports/filters_form&amp;&amp;redirect_to=listing&amp;path=21&amp;reports_id=2076')"
+              title="Add Filter"
+              class="btn btn-default link-to-modalbox"
+              id="filter_projects"
+              >Projects:</a
+            >&nbsp;
+          </li>
+
+          <li>
+            <div class="filters-preview-box is-active-1">
+              <span
+                title="Toggle Off"
+                class="filters-preview-toggle active"
+                cfg_report_id="2076"
+                cfg_entity_id="21"
+                cfg_fitler_id="2053"
+                test_id="filter_toggle"
+                ><i class="fa fa-toggle-on"></i
+              ></span>
+              <span
+                class="filters-preview-box-heading"
+                onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=reports/filters_form&amp;id=2053&amp;redirect_to=listing&amp;path=21&amp;reports_id=2076')"
+                title="Edit"
+                test_id="filter_preview"
+                ><b>Status</b><i class="fa fa-angle-right"></i
+                ><span class="filters-preview-condition-include"
+                  >New, Open, Waiting</span
+                ></span
+              ><a
+                href="https://tredgate.com/pmtool/index.php?module=reports/filters&amp;action=delete&amp;id=2053&amp;redirect_to=listing&amp;path=21&amp;reports_id=2076&amp;token=PO0Fg5FITo"
+                ><i class="fa fa-trash-o" title="Remove Filter"></i
+              ></a>
+            </div>
+          </li>
+        </ul>
+
+        <script>
+          $(function () {
+            app_filters_preview_toggle();
+          });
+        </script>
+      </div>
+    </div>
+    <div class="filters-panels horizontal-filters-panels"></div>
+    <script>
+      $(function () {
+        //dorpdowns
+        $(" .filters-panels-fields").change(function () {
+          field_id = $(this).attr("data-field-id");
+          field_val = $(this).val();
+
+          $.ajax({
+            method: "POST",
+            url: "https://tredgate.com/pmtool/index.php?module=reports/filters&action=set_field_fielter_value&reports_id=2076&token=PO0Fg5FITo",
+            data: { field_id: field_id, field_val: field_val },
+          }).done(function () {
+            load_items_listing("entity_items_listing2076_21", 1);
+          });
+        });
+
+        //input
+        $(" .filters-panels-form").submit(function () {
+          $.ajax({
+            method: "POST",
+            url: "https://tredgate.com/pmtool/index.php?module=reports/filters&action=set_field_fielter_value&reports_id=2076&token=PO0Fg5FITo",
+            data: $(this).serializeArray(),
+          }).done(function () {
+            load_items_listing("entity_items_listing2076_21", 1);
+          });
+          return false;
+        });
+
+        //checkoxes & radiboxes
+        $(" .filters-panels-checkbox-fields").change(function () {
+          field_id = $(this).attr("data-field-id");
+
+          field_val = [];
+          $(".filters-panels-checkbox-field-" + field_id + ":checked").each(
+            function () {
+              field_val.push($(this).val());
+            }
+          );
+
+          $.ajax({
+            method: "POST",
+            url: "https://tredgate.com/pmtool/index.php?module=reports/filters&action=set_field_fielter_value&reports_id=2076&token=PO0Fg5FITo",
+            data: { field_id: field_id, field_val: field_val },
+          }).done(function () {
+            load_items_listing("entity_items_listing2076_21", 1);
+          });
+        });
+
+        //dates
+        var filters_panels_date_fields_is_init = false;
+
+        $(" .filters-panels-date-fields").click(function () {
+          filters_panels_date_fields_is_init = true;
+        });
+
+        //jalali
+        $(" .jalali-datepicker").on("change", function (e) {
+          var field_id = $(this).attr("data-field-id");
+
+          setTimeout(function () {
+            field_val = [];
+            field_val.push("");
+            $(".filters-panels-date-field-" + field_id).each(function () {
+              field_val.push($(this).val());
+            });
+
+            //alert(field_val)
+
+            $.ajax({
+              method: "POST",
+              url: "https://tredgate.com/pmtool/index.php?module=reports/filters&action=set_field_fielter_value&reports_id=2076&token=PO0Fg5FITo",
+              data: { field_id: field_id, field_val: field_val },
+            }).done(function () {
+              load_items_listing("entity_items_listing2076_21", 1);
+            });
+          }, 100);
+        });
+
+        $(" .filters-panels-date-fields").on("changeDate", function (e) {
+          //skip ajax load for first load
+          if (filters_panels_date_fields_is_init == false) return false;
+
+          var field_id = $(this).attr("data-field-id");
+
+          setTimeout(function () {
+            field_val = [];
+            field_val.push("");
+            $(".filters-panels-date-field-" + field_id).each(function () {
+              field_val.push($(this).val());
+            });
+
+            //alert(field_val)
+
+            $.ajax({
+              method: "POST",
+              url: "https://tredgate.com/pmtool/index.php?module=reports/filters&action=set_field_fielter_value&reports_id=2076&token=PO0Fg5FITo",
+              data: { field_id: field_id, field_val: field_val },
+            }).done(function () {
+              load_items_listing("entity_items_listing2076_21", 1);
+            });
+          }, 100);
+        });
+      });
+
+      function apply_panel_filters(panel_id) {
+        fields_values = {};
+
+        $(".filters-panels-fields-" + panel_id).each(function () {
+          field_id = $(this).attr("data-field-id");
+          fields_values[field_id] = $(this).val();
+        });
+
+        $(".filters-panels-input-fields-" + panel_id).each(function () {
+          field_id = $(this).attr("data-field-id");
+          fields_values[field_id] = $(this).val();
+        });
+
+        $(".filters-panels-date-fields-" + panel_id).each(function () {
+          field_id = $(this).attr("data-field-id");
+
+          if (!fields_values[field_id]) {
+            field_val = [];
+            field_val.push("");
+            $(".filters-panels-date-field-" + field_id).each(function () {
+              field_val.push($(this).val());
+            });
+
+            fields_values[field_id] = field_val;
+          }
+        });
+
+        $(".filters-panels-checkbox-fields-" + panel_id).each(function () {
+          field_id = $(this).attr("data-field-id");
+
+          if (!fields_values[field_id]) {
+            field_val = [];
+            $(".filters-panels-checkbox-field-" + field_id + ":checked").each(
+              function () {
+                field_val.push($(this).val());
+              }
+            );
+
+            if (field_val.length > 0) {
+              fields_values[field_id] = field_val;
+            } else {
+              fields_values[field_id] = "";
+            }
+          }
+        });
+
+        //console.log(fields_values)
+
+        $.ajax({
+          method: "POST",
+          url: "https://tredgate.com/pmtool/index.php?module=reports/filters&action=set_multiple_fields_fielter_values&reports_id=2076&token=PO0Fg5FITo",
+          data: { fields_values: fields_values },
+        }).done(function () {
+          load_items_listing("entity_items_listing2076_21", 1);
+        });
+      }
+
+      function delete_field_fielter_value(field_id) {
+        $(".filters-panels-field-" + field_id)
+          .val("")
+          .trigger("change");
+
+        //reset date
+        $(".filters-panels-date-field-" + field_id).val("");
+
+        //reset input
+        $(".filters-panels-input-field-" + field_id).val("");
+
+        //reset chosen
+        if ($(".filters-panels-field-" + field_id).hasClass("chosen-select")) {
+          $(".filters-panels-field-" + field_id).trigger("chosen:updated");
+        }
+
+        //reset checkboxes
+        $(".filters-panels-checkbox-field-" + field_id + ":checked").each(
+          function () {
+            $(this).prop("checked", false);
+            id = $(this).val();
+            $("#uniform-values_" + id + " span").removeClass("checked");
+          }
+        );
+
+        $.ajax({
+          method: "POST",
+          url: "https://tredgate.com/pmtool/index.php?module=reports/filters&action=delete_field_fielter_value&reports_id=2076&token=PO0Fg5FITo",
+          data: { field_id: field_id },
+        }).done(function () {
+          load_items_listing("entity_items_listing2076_21", 1);
+        });
+      }
+
+      function reset_panel_filters(panel_id) {
+        $(".filters-panels-" + panel_id + " .form-control")
+          .val("")
+          .trigger("change");
+        $(".filters-panels-" + panel_id + " .chosen-select").trigger(
+          "chosen:updated"
+        );
+
+        //reset checkboxes
+        $(".filters-panels-" + panel_id + " input:checked").each(function () {
+          $(this).prop("checked", false);
+          id = $(this).val();
+          $("#uniform-values_" + id + " span").removeClass("checked");
+        });
+
+        $.ajax({
+          method: "POST",
+          url: "https://tredgate.com/pmtool/index.php?module=reports/filters&action=reset_panel_filters&reports_id=2076&token=PO0Fg5FITo",
+          data: { panels_id: panel_id },
+        }).done(function () {
+          load_items_listing("entity_items_listing2076_21", 1);
+        });
+      }
+    </script>
+
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="entitly-listing-buttons-left" test_id="test">
+          <button
+            onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;path=21'); return false;"
+            class="btn btn-primary"
+            type="button"
+            test_id="Add Project"
+          >
+            Add Project
+          </button>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <div class="entitly-listing-buttons-right1">
+          <form
+            id="entity_items_listing2076_21_search_form"
+            class="navbar-search listing-search-form"
+            onsubmit="load_items_listing('entity_items_listing2076_21',1); return false;"
+            test_id="search_form"
+          >
+            <div class="input-group input-medium">
+              <div class="input-group-btn">
+                <button
+                  type="button"
+                  class="btn btn-default dropdown-toggle"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  test_id="search_dropdown"
+                >
+                  <i class="fa fa-angle-down"></i>
+                </button>
+                <div
+                  class="dropdown-menu hold-on-click dropdown-checkboxes"
+                  role="menu"
+                >
+                  <label
+                    ><div
+                      class="checker"
+                      id="uniform-entity_items_listing2076_21_use_search_fields"
+                    >
+                      <span class="checked"
+                        ><input
+                          name="entity_items_listing2076_21_use_search_fields[]"
+                          id="entity_items_listing2076_21_use_search_fields"
+                          value="158"
+                          type="checkbox"
+                          class="entity_items_listing2076_21_use_search_fields"
+                          checked="checked"
+                      /></span>
+                    </div>
+                    Name</label
+                  ><label
+                    ><div
+                      class="checker"
+                      id="uniform-entity_items_listing2076_21_use_search_fields"
+                    >
+                      <span
+                        ><input
+                          name="entity_items_listing2076_21_use_search_fields[]"
+                          id="entity_items_listing2076_21_use_search_fields"
+                          value="160"
+                          type="checkbox"
+                          class="entity_items_listing2076_21_use_search_fields"
+                      /></span>
+                    </div>
+                    Description</label
+                  ><label class="divider"></label>
+                  <label
+                    ><div
+                      class="checker"
+                      id="uniform-entity_items_listing2076_21_search_in_all"
+                    >
+                      <span
+                        ><input
+                          name="entity_items_listing2076_21_search_in_all"
+                          id="entity_items_listing2076_21_search_in_all"
+                          value="1"
+                          type="checkbox"
+                      /></span>
+                    </div>
+                    Disable filters</label
+                  >
+                  <label
+                    ><div
+                      class="checker"
+                      id="uniform-entity_items_listing2076_21_search_type_and"
+                    >
+                      <span
+                        ><input
+                          name="entity_items_listing2076_21_search_type_and"
+                          id="entity_items_listing2076_21_search_type_and"
+                          value="1"
+                          type="checkbox"
+                      /></span>
+                    </div>
+                    Search all words</label
+                  >
+                  <label
+                    ><div
+                      class="checker"
+                      id="uniform-entity_items_listing2076_21_search_type_match"
+                    >
+                      <span
+                        ><input
+                          name="entity_items_listing2076_21_search_type_match"
+                          id="entity_items_listing2076_21_search_type_match"
+                          value="1"
+                          type="checkbox"
+                      /></span>
+                    </div>
+                    Exact match</label
+                  >
+                  <label class="divider"></label
+                  ><input
+                    name="entity_items_listing2076_21_search_reset"
+                    id="entity_items_listing2076_21_search_reset"
+                    value=""
+                    type="hidden"
+                  /><label
+                    ><div
+                      class="checker"
+                      id="uniform-entity_items_listing2076_21_search_in_comments"
+                    >
+                      <span
+                        ><input
+                          name="entity_items_listing2076_21_search_in_comments"
+                          id="entity_items_listing2076_21_search_in_comments"
+                          value="1"
+                          type="checkbox"
+                      /></span>
+                    </div>
+                    Search in comments</label
+                  ><label class="divider"></label>
+                  <label
+                    ><a
+                      onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=dashboard/search_help')"
+                      class="link-to-modalbox"
+                      >Search Help</a
+                    ></label
+                  >
+                </div>
+              </div>
+
+              <input
+                name="entity_items_listing2076_21_search_keywords"
+                id="entity_items_listing2076_21_search_keywords"
+                value=""
+                type="text"
+                placeholder="Search"
+                class="form-control input-medium"
+                test_id="search_input"
+              />
+              <span class="input-group-btn">
+                <button
+                  title="Search"
+                  class="btn btn-info"
+                  test_id="search_button"
+                >
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div
+          id="entity_items_listing2076_21"
+          class="entity_items_listing entity_items_listing_loading"
+          style="opacity: 1"
+        >
+          <div class="table-scrollable">
+            <div
+              class="table-scrollable table-wrapper slimScroll"
+              id="slimScroll"
+            >
+              <table
+                class="table table-striped table-bordered table-hover"
+                data-count-fixed-columns="0"
+                data-fixed-head="1"
+                data-resizable="0"
+              >
+                <thead style="transform: none">
+                  <tr class="listing-table-tr">
+                    <th
+                      class="fieldtype_action-th field-152-th listing_order"
+                      data-field-id="152"
+                      test_id="Action"
+                    >
+                      <div>Action</div>
+                    </th>
+
+                    <th
+                      onclick="listing_order_by('entity_items_listing2076_21','153','asc')"
+                      class="fieldtype_id-th field-153-th listing_order"
+                      data-field-id="153"
+                      test_id="ID"
+                    >
+                      <div>ID</div>
+                    </th>
+
+                    <th
+                      onclick="listing_order_by('entity_items_listing2076_21','156','asc')"
+                      class="fieldtype_dropdown-th field-156-th listing_order"
+                      data-field-id="156"
+                      test_id="Priority"
+                    >
+                      <div>Priority</div>
+                    </th>
+
+                    <th
+                      onclick="listing_order_by('entity_items_listing2076_21','158','asc')"
+                      class="fieldtype_input-th field-158-th listing_order"
+                      data-field-id="158"
+                      test_id="Name"
+                    >
+                      <div>Name</div>
+                    </th>
+
+                    <th
+                      onclick="listing_order_by('entity_items_listing2076_21','157','asc')"
+                      class="fieldtype_dropdown-th field-157-th listing_order"
+                      data-field-id="157"
+                      test_id="Status"
+                    >
+                      <div>Status</div>
+                    </th>
+
+                    <th
+                      onclick="listing_order_by('entity_items_listing2076_21','159','asc')"
+                      class="fieldtype_input_date-th field-159-th listing_order"
+                      data-field-id="159"
+                      test_id="Start Date"
+                    >
+                      <div>Start Date</div>
+                    </th>
+
+                    <th
+                      onclick="listing_order_by('entity_items_listing2076_21','154','asc')"
+                      class="fieldtype_date_added-th field-154-th listing_order"
+                      data-field-id="154"
+                      test_id="Date Added"
+                    >
+                      <div>Date Added</div>
+                    </th>
+
+                    <th
+                      onclick="listing_order_by('entity_items_listing2076_21','155','asc')"
+                      class="fieldtype_created_by-th field-155-th listing_order"
+                      data-field-id="155"
+                      test_id="Created By"
+                    >
+                      <div>Created By</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="listing-table-tr" test-id="project_id_1">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=1&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=1&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-1&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      1
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-1&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >Project</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    >
+                      01/02/2023
+                    </td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      20/02/2023 23:29
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="System Administrator"
+                        >System Administrator</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_2">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=2&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=2&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-2&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      2
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-2&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >TEst2</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      28/02/2023 00:01
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="System Administrator"
+                        >System Administrator</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_3">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=3&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=3&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-3&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      3
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-3&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >Test 3</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      28/02/2023 10:05
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="System Administrator"
+                        >System Administrator</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_4">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=4&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=4&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-4&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      4
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-4&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >test1510</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      29/03/2023 04:33
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="Petr Fifka"
+                        >Petr Fifka</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_5">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=5&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=5&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-5&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      5
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-5&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >Jméno bla bla</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      29/03/2023 10:16
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="Petr Fifka"
+                        >Petr Fifka</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_7">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=7&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=7&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-7&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      7
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-7&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >test</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      29/03/2023 10:39
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="Dušan Baran"
+                        >Dušan Baran</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_8">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=8&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=8&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-8&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      8
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-8&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >test project</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      29/03/2023 10:40
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="Jan Harák"
+                        >Jan Harák</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_9">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=9&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=9&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-9&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      9
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-9&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >test project</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      29/03/2023 10:40
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="Jan Harák"
+                        >Jan Harák</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_10">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=10&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=10&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-10&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      10
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-10&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >test project</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      29/03/2023 10:41
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="Jan Harák"
+                        >Jan Harák</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="listing-table-tr" test-id="project_id_11">
+                    <td
+                      class="fieldtype_action field-152-td nowrap"
+                      test_id="fieldtype_action"
+                    >
+                      <a
+                        title="Delete"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/delete&amp;id=11&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-trash-o"></i
+                      ></a>
+                      <a
+                        title="Edit"
+                        class="btn btn-default btn-xs purple"
+                        href="#"
+                        onclick="open_dialog('https://tredgate.com/pmtool/index.php?module=items/form&amp;id=11&amp;entity_id=21&amp;path=21&amp;gotopage[2076]=1'); return false;"
+                        ><i class="fa fa-edit"></i
+                      ></a>
+                      <a
+                        title="Info"
+                        class="btn btn-default btn-xs purple"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-11&amp;gotopage[2076]=1"
+                        ><i class="fa fa-info"></i
+                      ></a>
+                    </td>
+
+                    <td
+                      class="fieldtype_id field-153-td"
+                      test_id="fieldtype_id"
+                    >
+                      11
+                    </td>
+
+                    <td
+                      class="fieldtype_dropdown field-156-td"
+                      test_id="Priority"
+                    >
+                      <div>Urgent</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input field-158-td item_heading_td"
+                      test_id="Name"
+                    >
+                      <a
+                        class="item_heading_link"
+                        href="https://tredgate.com/pmtool/index.php?module=items/info&amp;path=21-11&amp;redirect_to=subentity&amp;gotopage[2076]=1"
+                        >test project</a
+                      >
+                    </td>
+                    <td
+                      class="fieldtype_dropdown field-157-td"
+                      test_id="Status"
+                    >
+                      <div>New</div>
+                    </td>
+
+                    <td
+                      class="fieldtype_input_date field-159-td"
+                      test_id="Start Date"
+                    ></td>
+
+                    <td
+                      class="fieldtype_date_added field-154-td nowrap"
+                      test_id="fieldtype_date_added"
+                    >
+                      29/03/2023 10:51
+                    </td>
+
+                    <td
+                      class="fieldtype_created_by field-155-td"
+                      test_id="fieldtype_created_by"
+                    >
+                      <span
+                        data-toggle="popover"
+                        title=""
+                        data-content="        <table align=center>          <tr>            <td valign=top width=60><img src=https://tredgate.com/pmtool/images/no_photo.png width=50></td>            <td valign=top>              <table class=popover-table-data>              </table>            </td>          </tr>        </table>"
+                        data-original-title="Jan Harák"
+                        >Jan Harák</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="tableScrollRailX"></div>
+              <div class="tableScrollBarX"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              Displaying <nobr><strong>1</strong> to <strong>10</strong></nobr>
+              <nobr>(of <strong>1344</strong> items)</nobr>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="dataTables_paginate paging_bootstrap">
+                <ul class="pagination">
+                  <li class="active">
+                    <a href="#" onclick="return false"
+                      ><i class="fa fa-angle-left"></i
+                    ></a>
+                  </li>
+                  <li class="active">
+                    <a href="#" onclick="return false">1</a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',2); return false;"
+                      title=" Page 2 "
+                      >2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',3); return false;"
+                      title=" Page 3 "
+                      >3</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',4); return false;"
+                      title=" Page 4 "
+                      >4</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',5); return false;"
+                      title=" Page 5 "
+                      >5</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',6); return false;"
+                      title=" Page 6 "
+                      >6</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',7); return false;"
+                      title=" Page 7 "
+                      >7</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',8); return false;"
+                      title=" Page 8 "
+                      >8</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',9); return false;"
+                      title=" Page 9 "
+                      >9</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',10); return false;"
+                      title=" Page 10 "
+                      >10</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',11)"
+                      title=" Next Set of 10 Pages "
+                      >...</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="load_items_listing('entity_items_listing2076_21',2); return false;"
+                      title=" Next Page "
+                      ><i class="fa fa-angle-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            $("#entity_items_listing2076_21_info_block").show();
+          </script>
+          <script>
+            $(function () {
+              if ($(".listing-2076-number-of-rows").length) {
+                $(".listing-2076-number-of-rows").html("(1344)");
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <input
+      name="entity_items_listing2076_21_order_fields"
+      id="entity_items_listing2076_21_order_fields"
+      value=""
+      type="hidden"
+    /><input
+      name="entity_items_listing2076_21_has_with_selected"
+      id="entity_items_listing2076_21_has_with_selected"
+      value="0"
+      type="hidden"
+    />
+    <script>
+      function load_items_listing(listing_container, page) {
+        //parse listing id
+        listing_data = listing_container
+          .replace("entity_items_listing", "")
+          .split("_");
+
+        //set default redirect
+        redirect_to = "report_" + listing_data[0];
+
+        //set default path
+        path = listing_data[1];
+
+        //replace default path by current path
+        if ($("#entity_items_listing_path").length) {
+          path = $("#entity_items_listing_path").val();
+          redirect_to = "";
+        }
+
+        //replace default path by subentity path in info page
+        if ($("#subentity" + parseInt(path) + "_items_listing_path").length) {
+          path = $("#subentity" + path + "_items_listing_path").val();
+          redirect_to = "parent_item_info_page";
+        }
+
+        //force custom redirect
+        if ($("#" + listing_container + "_redirect_to").length) {
+          redirect_to = $("#" + listing_container + "_redirect_to").val();
+        }
+
+        //set redirect to dashboard if it's dashboard page
+        if ($("#dashboard-reports-container").length) {
+          redirect_to = "dashboard";
+        }
+
+        if ($("#dashboard-reports-group-container").length) {
+          redirect_to =
+            "reports_groups" +
+            $("#dashboard-reports-group-container").attr("data_id");
+        }
+
+        $("#" + listing_container).append(
+          '<div class="data_listing_processing"></div>'
+        );
+
+        $("#" + listing_container).css("opacity", 0.5);
+
+        //prepare search fields id
+        var use_search_fields = [];
+        $.each(
+          $("." + listing_container + "_use_search_fields:checked"),
+          function () {
+            use_search_fields.push($(this).val());
+          }
+        );
+
+        $("#" + listing_container).load(
+          "https://tredgate.com/pmtool/index.php?module=items/listing",
+          {
+            redirect_to: redirect_to,
+            path: path,
+            reports_entities_id: listing_data[1],
+            reports_id: listing_data[0],
+            listing_container: listing_container,
+            page: page,
+            search_keywords: $(
+              "#" + listing_container + "_search_keywords"
+            ).val(),
+            use_search_fields: use_search_fields.join(","),
+            search_in_comments: $(
+              "#" + listing_container + "_search_in_comments"
+            ).prop("checked"),
+            search_in_all: $("#" + listing_container + "_search_in_all").prop(
+              "checked"
+            ),
+            search_type_and: $(
+              "#" + listing_container + "_search_type_and"
+            ).prop("checked"),
+            search_type_match: $(
+              "#" + listing_container + "_search_type_match"
+            ).prop("checked"),
+            search_reset: $("#" + listing_container + "_search_reset").val(),
+            listing_order_fields: $(
+              "#" + listing_container + "_order_fields"
+            ).val(),
+            listing_order_fields_changed: $(
+              "#" + listing_container + "_order_fields"
+            ).attr("is_changed"),
+            has_with_selected: $(
+              "#" + listing_container + "_has_with_selected"
+            ).val(),
+            force_display_id: $(
+              "#" + listing_container + "_force_display_id"
+            ).val(),
+            force_popoup_fields: $(
+              "#" + listing_container + "_force_popoup_fields"
+            ).val(),
+            force_filter_by: $(
+              "#" + listing_container + "_force_filter_by"
+            ).val(),
+          },
+          function (response, status, xhr) {
+            if (status == "error") {
+              $(this).html(
+                '<div class="alert alert-error"><b>Error:</b> ' +
+                  xhr.status +
+                  " " +
+                  xhr.statusText +
+                  "<div>" +
+                  response +
+                  "</div></div>"
+              );
+            }
+
+            $("#" + listing_container).css("opacity", 1);
+
+            appHandleUniformInListing();
+
+            //prevent double click on button
+            $(".prevent-double-click").click(function () {
+              $(this).attr("disabled", "disabled");
+            });
+
+            handle_itmes_select(listing_container);
+
+            app_handle_listing_horisontal_scroll($(this));
+
+            app_handle_listing_fixed_table_header($(this), "items/items");
+
+            //editable cell
+            $("#" + listing_container + " .editable-cell").click(function (e) {
+              if (
+                e.target.tagName.toLowerCase() != "a" &&
+                e.target.tagName.toLowerCase() != "sup"
+              ) {
+                $(this).closest("tr").addClass("editable-cell-row-selected");
+
+                open_dialog(
+                  "https://tredgate.com/pmtool/index.php?module=items/form_single_field&path=" +
+                    $(this).attr("data_path") +
+                    "&field_id=" +
+                    $(this).attr("data_field_id") +
+                    "&report_id=" +
+                    $(this).attr("data_report_id") +
+                    "&page=" +
+                    $(this).attr("data_page")
+                );
+
+                let that = $(this);
+
+                $("#ajax-modal").on("hidden.bs.modal", function () {
+                  that.closest("tr").removeClass("editable-cell-row-selected");
+                });
+              }
+            });
+
+            //select row
+            $("#" + listing_container + " .items_checkbox").each(function () {
+              if ($(this).attr("checked") == "checked") {
+                $(this).closest("tr").addClass("row-selected");
+              }
+            });
+
+            app_handle_listing_resizer(
+              $(this),
+              "https://tredgate.com/pmtool/index.php?module=reports/reports&action=set_listing_col_width&reports_id=2076&token=PO0Fg5FITo"
+            );
+
+            app_handle_listing_slimscroll($(this), "items/items");
+          }
+        );
+      }
+
+      function handle_itmes_select_all(listing_container) {
+        $("#" + listing_container + " .select_all_items").click();
+      }
+
+      function handle_itmes_select_currnt_page(listing_container) {
+        $("#" + listing_container + " .select_all_items_current_page").click();
+      }
+
+      function handle_itmes_select_reset(listing_container) {
+        $("#" + listing_container + " .select_all_items").attr("checked", true);
+        $("#" + listing_container + " .select_all_items_current_page").attr(
+          "checked",
+          false
+        );
+        $("#" + listing_container + " .select_all_items").click();
+      }
+
+      function handle_itmes_select(listing_container) {
+        //select on current page
+        $("#" + listing_container + " .select_all_items_current_page").click(
+          function () {
+            listing_data = listing_container
+              .replace("entity_items_listing", "")
+              .split("_");
+
+            reports_id = listing_data[0];
+
+            if ($(this).attr("checked") == "checked") {
+              items = [];
+              $("#" + listing_container + " .items_checkbox").each(function () {
+                if ($(this).attr("checked") != "checked") {
+                  $(this).attr("checked", true);
+                  $(
+                    "#" +
+                      listing_container +
+                      " #uniform-items_" +
+                      $(this).val() +
+                      " span"
+                  ).addClass("checked");
+                  $(this).closest("tr").addClass("row-selected");
+                  items.push($(this).val());
+                }
+              });
+
+              $.ajax({
+                type: "POST",
+                url: "https://tredgate.com/pmtool/index.php?module=items/select_items&action=select_on_page&token=PO0Fg5FITo",
+                data: {
+                  items: items,
+                  reports_id: reports_id,
+                  path: listing_data[1],
+                },
+              });
+            } else {
+              items = [];
+              $("#" + listing_container + " .items_checkbox").each(function () {
+                $(this).attr("checked", false);
+                $(
+                  "#" +
+                    listing_container +
+                    " #uniform-items_" +
+                    $(this).val() +
+                    " span"
+                ).removeClass("checked");
+                $(this).closest("tr").removeClass("row-selected");
+                items.push($(this).val());
+              });
+
+              $.ajax({
+                type: "POST",
+                url: "https://tredgate.com/pmtool/index.php?module=items/select_items&action=deselect_on_page&token=PO0Fg5FITo",
+                data: {
+                  items: items,
+                  reports_id: reports_id,
+                  path: listing_data[1],
+                },
+              });
+            }
+          }
+        );
+
+        //select single item
+        $("#" + listing_container + " .items_checkbox").click(function () {
+          listing_data = listing_container
+            .replace("entity_items_listing", "")
+            .split("_");
+
+          //set default path
+          path = listing_data[1];
+
+          if ($("#entity_items_listing_path").length) {
+            listing_data[1] = $("#entity_items_listing_path").val();
+          }
+
+          reports_id = listing_data[0];
+
+          if ($("#" + listing_container + "_use_reports_id").length) {
+            reports_id = $("#" + listing_container + "_use_reports_id").val();
+          }
+
+          //select row
+          if ($(this).attr("checked") == "checked") {
+            $(this).closest("tr").addClass("row-selected");
+          } else {
+            $(this).closest("tr").removeClass("row-selected");
+          }
+
+          $.ajax({
+            type: "POST",
+            url: "https://tredgate.com/pmtool/index.php?module=items/select_items&action=select&token=PO0Fg5FITo",
+            data: {
+              id: $(this).val(),
+              checked: $(this).attr("checked"),
+              reports_id: reports_id,
+              path: listing_data[1],
+            },
+          });
+        });
+
+        //force select all itesm if listing type is not table
+        $("." + listing_container + "_select_all_items_force").click(
+          function () {
+            data_conteiner = $(this).attr("data-container-id");
+            $("#" + data_conteiner + " .select_all_items").trigger("click");
+            $(this).before('<div class="ajax-loading-small"></div>');
+          }
+        );
+
+        //select all items
+        $("#" + listing_container + " .select_all_items").click(function () {
+          listing_data = listing_container
+            .replace("entity_items_listing", "")
+            .split("_");
+
+          //set default path
+          path = listing_data[1];
+
+          if ($("#entity_items_listing_path").length) {
+            path = $("#entity_items_listing_path").val();
+          }
+
+          //replace default path by subentity path in info page
+          if ($("#subentity" + parseInt(path) + "_items_listing_path").length) {
+            path = $("#subentity" + path + "_items_listing_path").val();
+          }
+
+          //prepare search fields id
+          var use_search_fields = [];
+          $.each(
+            $("." + listing_container + "_use_search_fields:checked"),
+            function () {
+              use_search_fields.push($(this).val());
+            }
+          );
+
+          //add loading
+          $(this).before('<div class="ajax-loading-small"></div>');
+
+          var obj = $(this);
+
+          use_reports_id = 0;
+          if ($("#" + listing_container + "_use_reports_id").length) {
+            use_reports_id = $(
+              "#" + listing_container + "_use_reports_id"
+            ).val();
+          }
+          //alert(use_reports_id)
+
+          $.ajax({
+            type: "POST",
+            url: "https://tredgate.com/pmtool/index.php?module=items/select_items&action=select_all&token=PO0Fg5FITo",
+            data: {
+              id: $(this).val(),
+              checked: $(this).attr("checked"),
+              reports_id: $(this).val(),
+              use_reports_id: use_reports_id,
+              path: path,
+              is_tree_view: $(this).attr("is_tree_view"),
+              search_keywords: $(
+                "#" + listing_container + "_search_keywords"
+              ).val(),
+              use_search_fields: use_search_fields.join(","),
+              search_in_comments: $(
+                "#" + listing_container + "_search_in_comments"
+              ).prop("checked"),
+              search_in_all: $("#" + listing_container + "_search_in_all").prop(
+                "checked"
+              ),
+              search_type_and: $(
+                "#" + listing_container + "_search_type_and"
+              ).prop("checked"),
+              search_type_match: $(
+                "#" + listing_container + "_search_type_match"
+              ).prop("checked"),
+              listing_order_fields: $(
+                "#" + listing_container + "_order_fields"
+              ).val(),
+              force_display_id: $(
+                "#" + listing_container + "_force_display_id"
+              ).val(),
+              force_filter_by: $(
+                "#" + listing_container + "_force_filter_by"
+              ).val(),
+            },
+          }).done(function () {
+            $(".ajax-loading-small").remove();
+
+            if (obj.attr("checked")) {
+              $("#" + listing_container + " .items_checkbox").each(function () {
+                $(this).attr("checked", true);
+                $(
+                  "#" +
+                    listing_container +
+                    " #uniform-items_" +
+                    $(this).val() +
+                    " span"
+                ).addClass("checked");
+
+                $(this).closest("tr").addClass("row-selected");
+              });
+            } else {
+              $("#" + listing_container + " .items_checkbox").each(function () {
+                $(this).attr("checked", false);
+                $(
+                  "#" +
+                    listing_container +
+                    " #uniform-items_" +
+                    $(this).val() +
+                    " span"
+                ).removeClass("checked");
+
+                $(this).closest("tr").removeClass("row-selected");
+              });
+            }
+          });
+        });
+      }
+    </script>
+
+    <script>
+      $(function () {
+        load_items_listing("entity_items_listing2076_21", 1);
+      });
+    </script>
+  </div>
+</div>
